@@ -5,3 +5,6 @@
 // Flash bootloader
 
 ./avrdude -b 19200 -c usbasp-clone -p m32u4 -v -e -U flash:w:Caterina-MobiFlight-generic-32u4.hex
+
+// Flash original bootloader
+./avrdude -b 19200 -c usbasp-clone -p m32u4 -v -e -U flash:w:Caterina-promicro16.hex
