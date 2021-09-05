@@ -64,6 +64,9 @@
 /** Eight character bootloader firmware identifier reported to the host when requested */
 #define SOFTWARE_IDENTIFIER "CATERINA"
 
+#define LED_SETUP() DDRC |= (1 << 7);
+#define L_LED_OFF() PORTC &= ~(1 << 7)
+
 #define CPU_PRESCALE(n) (CLKPR = 0x80, CLKPR = (n))
 
 /* Type Defines: */
