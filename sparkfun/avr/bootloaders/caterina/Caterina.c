@@ -138,6 +138,8 @@ int main(void)
 
 	LED_SETUP();
 	L_LED_OFF();
+	TX_LED_OFF();
+	RX_LED_OFF();
 	CPU_PRESCALE(0);
 
 	// Initialize TIMER1 to handle bootloader timeout and LED tasks.
