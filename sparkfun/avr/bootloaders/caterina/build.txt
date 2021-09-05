@@ -1,4 +1,7 @@
 make clean
+make VID=0x1209 PID=0x0001 F_CPU=16000000
+copy Caterina.hex Caterina-MobiFlight-generic-32u4.hex
+make clean
 make PID=0x9209 F_CPU=16000000
 copy Caterina.hex Caterina-wiflyin.hex
 make clean
